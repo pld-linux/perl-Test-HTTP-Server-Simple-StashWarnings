@@ -8,13 +8,16 @@
 Summary:	Test::HTTP-Server-Simple-StashWarnings Perl module - catch your forked server's warnings
 Name:		perl-Test-HTTP-Server-Simple-StashWarnings
 Version:	0.03
-Release:	1
+Release:	2
 Source0:	http://search.cpan.org/CPAN/authors/id/S/SA/SARTAK/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0a63b8f45217f05611717292b7ec02e5
+# Source0-md5:  0a63b8f45217f05611717292b7ec02e5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 URL:		http://search.cpan.org/dist/Test-HTTP-Server-Simple-StashWarnings/
+BuildRequires:	perl-HTTP-Server-Simple
+BuildRequires:	perl-Test-HTTP-Server-Simple
+BuildRequires:	perl-WWW-Mechanize
 BuildRequires:	perl-devel >= 1:5.8.7
 %if %{with tests}
 %endif
