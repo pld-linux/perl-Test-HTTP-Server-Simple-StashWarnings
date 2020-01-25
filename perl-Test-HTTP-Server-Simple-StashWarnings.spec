@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests # do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Test
 %define		pnam	HTTP-Server-Simple-StashWarnings
 Summary:	Test::HTTP-Server-Simple-StashWarnings Perl module - catch your forked server's warnings
